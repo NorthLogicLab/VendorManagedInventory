@@ -137,7 +137,7 @@ The same thinking that built these VMI solutions now drives [PTDE](https://githu
 
 ## Status
 
-All four solutions live in production — across Lemvigh-Müller's SmartLager™ network and Sanistål/Ahlsell's StockMaster programme, serving industrial customers across Denmark.
+All four solutions live in production — across Lemvigh-Müller's SmartLager™ network and Sanistål/Ahlsell's StockMaster programme, serving industrial customers across Denmark and abroad.
 
 **From push to pull — in the market, not just the warehouse.**
 
