@@ -62,8 +62,7 @@ Duplicate presses within the same order period are detected — the label displa
 
 ## Status
 
-**Live in production** — deployed across warehouse locations.
-
+Co-architect of the ESL system now commercially deployed as part of Lemvigh-Müller's SmartLager™ solution — serving industrial customers across Denmark.
 ---
 
 *Part of [NorthLogicLab](https://github.com/NorthLogicLab) · Built by [Jon Bach](https://theenginesbehind.com)*
