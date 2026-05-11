@@ -57,7 +57,9 @@ Duplicate presses within the same order period are detected — the label displa
 ## Documentation
 
 - [ESL Use Case — System Architecture](docs/ESL%20UseCase.pdf)
-- https://www.lemu.dk/da/services/levering-og-lagerstyring/smartlager/elektronisk-hyldeforkant
+
+- [Lemvigh-Müller SmartLager™ — Elektronisk hyldeforkant](https://www.lemu.dk/da/services/levering-og-lagerstyring/smartlager/elektronisk-hyldeforkant)
+
 ---
 
 ## Status
