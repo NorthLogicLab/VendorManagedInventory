@@ -51,11 +51,11 @@ Replenishment: 1x weekly via mercher.
 ---
 
 ### 📦 StockMaster
-**Client:** Sanistål · **Platform:** [CribMaster / Stanley Black & Decker](https://storage.stanleyblackanddecker.com/cribmaster)
+**Client:** Sanistål (now Ahlsell) · **Platform:** [CribMaster / Stanley Black & Decker](https://storage.stanleyblackanddecker.com/cribmaster)
 
-VMI concept built on CribMaster technology. Order triggered based on min/max interval logic — generated as XML files from the CribMaster database. Sanistål won International Partner of the Year 2017 for this implementation.
+VMI concept built on CribMaster technology. Order triggered based on min/max interval logic — generated as XML files from the CribMaster database. Sanistål won International Partner of the Year 2017 for this implementation — a proven, successful concept still live under the Ahlsell brand.
 
-RFID access control — same programming approach as vending automater.
+RFID access control programmed via [ELATEC](https://www.elatec-rfid.com/int/) — card type, frequency, output format (hex vs decimal).
 
 Replenishment: 1x weekly via mercher.
 
@@ -120,11 +120,15 @@ The same thinking that built these VMI solutions now drives [PTDE](https://githu
 - [SmartVægte™](https://www.lemu.dk/da/services/levering-og-lagerstyring/smartlager/smartvaegte)
 - [Vending automater](https://www.lemu.dk/da/services/levering-og-lagerstyring/smartlager/smartautomater)
 
-**Sanistål**
-- [Vending machine — StockMaster](https://storage.stanleyblackanddecker.com/cribmaster)
+**Ahlsell / Sanistål**
+- [StockMaster — Lagerstyring](https://www.ahlsell.dk/da/services/ahlsell-services/lagerstyring/stockmaster)
 
 **Hardware & software partners**
-- [PDI Digital](https://www.pdi-digital.com/) · [DigiSens](https://digisens.ch/en/) · [AutoCrib](https://www.autocrib.com/) · [IVM Micro Solutions](https://www.ivmsolutions.com/)
+- [PDI Digital](https://www.pdi-digital.com/) — ESL hardware & embedded software
+- [DigiSens](https://digisens.ch/en/) — weight-based VMI hardware
+- [AutoCrib](https://www.autocrib.com/) · [IVM Micro Solutions](https://www.ivmsolutions.com/) — vending automater
+- [ELATEC](https://www.elatec-rfid.com/int/) — RFID reader software (card type, frequency, output format)
+- [CribMaster / Stanley Black & Decker](https://storage.stanleyblackanddecker.com/cribmaster) — StockMaster platform
 
 **Project documentation**
 - [ESL Use Case — System Architecture](docs/ESL%20UseCase.pdf)
@@ -133,11 +137,15 @@ The same thinking that built these VMI solutions now drives [PTDE](https://githu
 
 ## Status
 
-All four solutions live in production — across Lemvigh-Müller's SmartLager™ network and Sanistål's StockMaster programme, serving industrial customers across Denmark.
+All four solutions live in production — across Lemvigh-Müller's SmartLager™ network and Sanistål/Ahlsell's StockMaster programme, serving industrial customers across Denmark.
 
-The strategic shift in both organisations: from **push** to **pull**.
+**From push to pull — in the market, not just the warehouse.**
 
-Previously, suppliers pushed stock based on forecasts and assumptions. With VMI, consumption data pulls replenishment automatically — triggered by actual usage, not estimates. The result is less waste, fewer stockouts and a supplier relationship that shifts from transactional to strategic.
+In the early phase, VMI was a concept we had to explain and sell. Customers didn't know they needed it. We pushed the idea into the market.
+
+Over time, the concept became expected. Industrial customers started requesting VMI solutions proactively — and eventually writing it directly into tender requirements. The market had shifted from us pushing a concept to customers pulling it as a standard.
+
+That is the measure of a successful concept.
 
 ---
 
