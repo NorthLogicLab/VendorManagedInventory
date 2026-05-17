@@ -31,8 +31,6 @@ Replenishment: 1x weekly via mercher who refills stock and handles signal loss, 
 
 Shelf sensors monitor stock continuously. Order triggered automatically when stock falls below a pre-set minimum weight — based on min/max interval logic. No human action required. Range: 4kg to 1000kg per sensor.
 
-Best for bulk items, cables, fluids and stock that is hard to count visually.
-
 Replenishment: 1x weekly via mercher.
 
 → [Live on lemu.dk](https://www.lemu.dk/da/services/levering-og-lagerstyring/smartlager/smartvaegte)
@@ -44,7 +42,7 @@ Replenishment: 1x weekly via mercher.
 
 Locked dispensing units with RFID access control. Employees access items using existing access cards or PIN. System logs who takes what and when. Order triggered automatically based on min/max interval logic.
 
-RFID readers programmed per installation: card type, frequency, output format (hex vs decimal) — ensuring staff can use existing building access cards or purchase dedicated cards.
+RFID readers programmed per installation: card type, frequency, output format (hex vs decimal).
 
 Replenishment: 1x weekly via mercher.
 
@@ -55,7 +53,7 @@ Replenishment: 1x weekly via mercher.
 
 VMI concept built on CribMaster technology. Order triggered based on min/max interval logic — generated as XML files from the CribMaster database. Sanistål won International Partner of the Year 2017 for this implementation — a proven, successful concept still live under the Ahlsell brand.
 
-RFID access control programmed via [ELATEC](https://www.elatec-rfid.com/int/) — card type, frequency, output format (hex vs decimal).
+RFID access control programmed via [ELATEC](https://www.elatec-rfid.com/int/).
 
 Replenishment: 1x weekly via mercher.
 
@@ -88,15 +86,72 @@ This forced customers to think about criticality — not just what they used, bu
 ### Capacity Calculation
 Originally featured within CribMaster templates for StockMaster implementations at Sanistål — then re-invented and rebuilt to fit the AutoCrib solution at Lemvigh-Müller.
 
-Built a dedicated Excel model that automatically calculated capacity fill rate for AutoCrib vending machines. Given a customer's item list and ABC classification, the model calculated how their assortment fit the machine's physical capacity — room by room. Each room configured individually: some rooms hold 12 pairs, others 6. Almost entirely customer-specific.
-
-This turned a complex configuration problem into a structured, repeatable decision process.
+Built a dedicated Excel model that automatically calculated capacity fill rate per customer — room by room. Each room configured individually: some rooms hold 12 pairs, others 6. Almost entirely customer-specific.
 
 ### Item Database
-Over time, built a master item database mapping each physical room in each machine to a specific item — with max capacity defined per room. Enabled rapid configuration of new installations and consistent management of existing ones.
+Built a master item database mapping each physical room in each machine to a specific item — with max capacity defined per room. Enabled rapid configuration of new installations and consistent management of existing ones.
 
-### Business Cases
-Contributed to business case development for customer investments — translating operational data into financial justification for the VMI investment.
+### Asset Management — Rental and Calibration
+VMI infrastructure extended beyond consumable replenishment:
+
+**Rental items** — tools and equipment lent to employees or contractors tracked by who has what, since when, and when due back. Automatic reminders. No lost assets or disputes.
+
+**Calibrated instruments** — measuring instruments tracked by serial number, last calibration date, next due date, and certificate status. Implemented and live. All data captured and utilised.
+
+This transforms VMI from a replenishment system into a **complete asset lifecycle platform** — covering acquisition, usage, maintenance, and return.
+
+---
+
+## The Business Case — Hidden Costs VMI Eliminates
+
+Most organisations evaluate VMI on purchase price alone. That is the wrong number.
+
+The real question is: what does the current process actually cost?
+
+### Invoice Cost — DKK 1,000 per order
+
+In a high-wage country like Denmark, the fully loaded cost of processing a single purchase order and its associated invoice is typically **DKK 1,000** — when all steps are included:
+
+- Order creation and approval
+- Goods receipt confirmation
+- Invoice receipt and validation
+- 3-way matching (PO / delivery / invoice)
+- Bookkeeping and archiving
+- Error correction and follow-up
+
+With VMI, this entire process is replaced by a single consolidated weekly invoice per site. A customer with 200 individual order lines per week goes from 200 invoices to 1.
+
+**200 order lines × DKK 1,000 = DKK 200,000 hidden cost per week — eliminated.**
+
+### Walk & Wait Time
+
+Every minute a skilled employee spends walking to find stock, waiting for a delivery, or searching for a missing item is a direct productivity loss. In industrial environments — production lines, workshops, offshore facilities — hourly rates of DKK 400–600 are not unusual for the people affected.
+
+VMI ensures the right item is in the right place at the right time.
+
+### Consumption Reduction — typically 15–25%
+
+When items are freely accessible without control, overconsumption follows. Controlled access via RFID changes behaviour immediately and measurably.
+
+Experience from implementations at Lemvigh-Müller and Sanistål/Ahlsell shows consistent consumption reductions of **15–25%** from access control and visibility alone. No process change required. Just accountability.
+
+### Supplier Consolidation
+
+VMI concentrates purchasing with one supplier across multiple categories — consumables, PPE, tools, spare parts, safety equipment. The effect: fewer suppliers to manage, higher volume per supplier, stronger negotiating position, and reduced procurement overhead across the entire indirect spend portfolio.
+
+### The ROI Summary
+
+| Cost driver | Manual process | With VMI |
+|---|---|---|
+| Invoice processing | DKK 1,000 per order | 1 consolidated invoice per site per week |
+| Walk & wait time | Untracked, uncontrolled | Eliminated |
+| Consumption | Baseline | 15–25% reduction |
+| Supplier complexity | Multiple vendors, high overhead | Consolidated, lower cost to serve |
+| Asset tracking | Manual or absent | Automated, documented, auditable |
+
+The business case does not require optimistic assumptions. It requires honest accounting of what the current process actually costs.
+
+→ [Full business case documentation](docs/BusinessCase.md)
 
 ---
 
@@ -127,11 +182,12 @@ The same thinking that built these VMI solutions now drives [PTDE](https://githu
 - [PDI Digital](https://www.pdi-digital.com/) — ESL hardware & embedded software
 - [DigiSens](https://digisens.ch/en/) — weight-based VMI hardware
 - [AutoCrib](https://www.autocrib.com/) · [IVM Micro Solutions](https://www.ivmsolutions.com/) — vending automater
-- [ELATEC](https://www.elatec-rfid.com/int/) — RFID reader software (card type, frequency, output format)
+- [ELATEC](https://www.elatec-rfid.com/int/) — RFID reader software
 - [CribMaster / Stanley Black & Decker](https://storage.stanleyblackanddecker.com/cribmaster) — StockMaster platform
 
 **Project documentation**
 - [ESL Use Case — System Architecture](docs/ESL%20UseCase.pdf)
+- [Business Case — Hidden Costs VMI Eliminates](docs/BusinessCase.md)
 
 ---
 
