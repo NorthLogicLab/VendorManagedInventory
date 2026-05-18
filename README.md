@@ -151,7 +151,22 @@ VMI concentrates purchasing with one supplier across multiple categories — con
 
 The business case does not require optimistic assumptions. It requires honest accounting of what the current process actually costs.
 
-→ [Full business case documentation](docs/BusinessCase.md)
+### The Interactive ROI Calculator
+
+The business case was not presented to customers. It was handed to them.
+
+Built as an open input tool where customers entered their own data:
+
+- Number of order lines per week
+- Current hourly wage rates
+- Estimated walk & wait time per day
+- Number of suppliers currently used
+
+The model then calculated their specific hidden costs — invoice processing, lost productive time, overconsumption, supplier overhead — and produced a personalised ROI estimate.
+
+The result: customers could not argue against their own numbers. The conversation shifted from "convince me" to "how soon can we start."
+
+**That is the only business case that actually works.**
 
 ---
 
@@ -187,7 +202,6 @@ The same thinking that built these VMI solutions now drives [PTDE](https://githu
 
 **Project documentation**
 - [ESL Use Case — System Architecture](docs/ESL%20UseCase.pdf)
-- [Business Case — Hidden Costs VMI Eliminates](docs/BusinessCase.md)
 
 ---
 
